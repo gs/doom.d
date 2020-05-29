@@ -86,3 +86,8 @@
 (define-key evil-normal-state-map "\C-k" 'kill-line)
 (define-key evil-insert-state-map "\C-k" 'kill-line)
 (define-key evil-visual-state-map "\C-k" 'kill-line)
+
+(global-hl-line-mode -1)
+
+(use-package idle-highlight-mode
+  :hook (prog-mode . idle-highlight-mode))
