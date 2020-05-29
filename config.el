@@ -91,3 +91,18 @@
 
 (use-package idle-highlight-mode
   :hook (prog-mode . idle-highlight-mode))
+
+(use-package lispy
+  :config
+  (lispy-set-key-theme '(lispy c-digits)))
+
+(use-package lispyville
+  :config
+  (lispyville-set-key-theme '((operators normal)
+                              c-w
+                              (prettify insert)
+                              (atom-movement normal visual)
+                              additional
+                              additional-insert
+                              additional-movement
+                              slurp/barf-lispy)))
