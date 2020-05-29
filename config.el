@@ -29,6 +29,13 @@
 (setq doom-theme 'thirdstream)
 (setq doom-font (font-spec :family "Monolisa" :size 12))
 
+;; Turn off title bar
+;; Or use `defaults write org.gnu.Emacs HideDocumentIcon YES' in the termnial
+;; https://emacs.stackexchange.com/questions/33680/how-to-remove-the-icon-in-the-titlebar
+(add-to-list 'default-frame-alist '(ns-appearance . dark))
+(setq ns-use-proxy-icon nil)
+(setq frame-title-format nil)
+
 ;; mode line
 ;;
 (setq doom-modeline-buffer-file-name-style 'relative-to-project
