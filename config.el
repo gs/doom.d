@@ -109,3 +109,9 @@
                               additional-insert
                               additional-movement
                               slurp/barf-lispy)))
+
+(use-package cider
+  :config
+  (map! (:localleader
+         (:map (clojure-mode-map clojurescript-mode-map)
+          "," #'cider))))
