@@ -29,6 +29,12 @@
 (setq doom-theme 'thirdstream)
 (setq doom-font (font-spec :family "Monolisa" :size 12))
 
+;; mode line
+;;
+(setq doom-modeline-buffer-file-name-style 'relative-to-project
+      ;; 'truncate-with-project
+      )
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
