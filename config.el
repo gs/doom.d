@@ -39,7 +39,9 @@
 
 ;; mode line
 ;;
-(setq doom-modeline-buffer-file-name-style 'relative-to-project
+(setq doom-modeline-buffer-file-name-style
+      'file-name
+      ;; 'relative-to-project
       ;; 'truncate-with-project
       )
 
