@@ -111,8 +111,11 @@
                               additional-movement
                               slurp/barf-lispy)))
 
-(use-package cider
-  :config
+(add-hook! clojure-mode
+  (setq clojure-indent-style 'align-arguments
+        clojure-align-forms-automatically t)
   (map! (:localleader
          (:map (clojure-mode-map clojurescript-mode-map)
           "," #'cider))))
+
+(add-hook 'cider-repl-mode-hook #'evil-normalize-keymaps)
