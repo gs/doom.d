@@ -120,5 +120,8 @@
 
 (add-hook 'cider-repl-mode-hook #'evil-normalize-keymaps)
 
+(map! :leader
+      :desc "Last buffer" "TAB" #'mode-line-other-buffer)
+
 (global-set-key (kbd "s-'") 'er/expand-region)
 (global-set-key (kbd "s-\"") 'er/contract-region)
