@@ -74,6 +74,8 @@
 (setq doom-localleader-key ","
       doom-localleader-alt-key "M-,")
 
+(setq company-idle-delay nil)
+
 (after! evil
   (setq evil-move-beyond-eol t
         evil-move-cursor-back nil))
