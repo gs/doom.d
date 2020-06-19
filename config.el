@@ -127,3 +127,10 @@
 
 (global-set-key (kbd "s-'") 'er/expand-region)
 (global-set-key (kbd "s-\"") 'er/contract-region)
+;; swiper-isearch as default
+(global-set-key (kbd "C-s") 'swiper-isearch)
+(global-set-key (kbd "s-f") 'swiper-isearch)
+(global-set-key (kbd "s-F") 'counsel-rg)
+(global-set-key (kbd "s-P") 'counsel-M-x)
+(global-set-key (kbd "s-b") 'ivy-switch-buffer)
+(global-set-key (kbd "s-;") 'avy-goto-char-timer)
