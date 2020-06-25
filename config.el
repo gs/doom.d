@@ -192,3 +192,5 @@
 (counsel-projectile-modify-action
  'counsel-projectile-switch-project-action
  '((default counsel-projectile-switch-project-action-vc)))
+
+(setq git-commit-summary-max-length 68)
