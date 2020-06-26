@@ -189,8 +189,9 @@
 (global-set-key (kbd "s-b") 'ivy-switch-buffer)
 (global-set-key (kbd "s-;") 'avy-goto-char-timer)
 
-(counsel-projectile-modify-action
- 'counsel-projectile-switch-project-action
- '((default counsel-projectile-switch-project-action-vc)))
+(after! counsel-projectile
+  (counsel-projectile-modify-action
+   'counsel-projectile-switch-project-action
+   '((default counsel-projectile-switch-project-action-vc))))
 
 (setq git-commit-summary-max-length 68)
