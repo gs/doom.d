@@ -121,6 +121,7 @@
           "," #'cider))))
 
 (after! cider
+  (setq nrepl-hide-special-buffers nil)
   (add-hook 'company-completion-started-hook 'custom/set-company-maps)
   (add-hook 'company-completion-finished-hook 'custom/unset-company-maps)
   (add-hook 'company-completion-cancelled-hook 'custom/unset-company-maps))
