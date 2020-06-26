@@ -126,6 +126,11 @@
   (add-hook 'company-completion-finished-hook 'custom/unset-company-maps)
   (add-hook 'company-completion-cancelled-hook 'custom/unset-company-maps))
 
+(map! (:localleader
+       (:map (clojure-mode-map clojurescript-mode-map)
+        (:prefix ("e" . "eval")
+         "p" #'cider-pprint-eval-last-sexp))))
+
 (defun custom/unset-company-maps (&rest unused)
   "Set default mappings (outside of company).
     Arguments (UNUSED) are ignored."
