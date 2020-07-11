@@ -98,6 +98,21 @@
 (use-package idle-highlight-mode
   :hook (prog-mode . idle-highlight-mode))
 
+;;; Webby web web
+;;;
+(setq-default
+ css-indent-offset             2
+ js-indent-level               2
+ js2-basic-offset              2
+ js2-bounce-indent-p           nil
+ js2-highlight-level           3
+ web-mode-code-indent-offset   2
+ web-mode-css-indent-offset    2
+ web-mode-markup-indent-offset 2
+ web-mode-script-padding       2
+ web-mode-style-padding        2
+ )
+
 (use-package lispy
   :config
   (lispy-set-key-theme '(lispy c-digits)))
