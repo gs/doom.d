@@ -95,9 +95,6 @@
 (define-key evil-insert-state-map "\C-k" 'kill-line)
 (define-key evil-visual-state-map "\C-k" 'kill-line)
 
-(use-package idle-highlight-mode
-  :hook (prog-mode . idle-highlight-mode))
-
 ;;; Webby web web
 ;;;
 (setq-default
