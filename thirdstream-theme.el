@@ -35,18 +35,9 @@
       (weaker "#dddddd")
       (weakest "#efefef")
       (highlight "#fda50f")
-      ;; (highlight-gray "#d6d6d6")
-      ;; (highlight-light-gray "#eeeeee")
-      ;; (highlight-light-yellow "#fffceb")
-      ;; (highlight-orange "#FDA50F")
-      ;; (highlight-yellow "#fbf1a9")
-      ;; (highlight-green "#9eebcf")
-      ;; (highlight-blue "#cdecff")
-      ;; (highlight-red "#ff725c")
       (str     "#0271b5")
       (success "#00ff00")
-      (warning "#ff0000")
-      (warning2 "#ff8800"))
+      (warning "#ff0000"))
   (custom-theme-set-faces
    'thirdstream
 
@@ -68,10 +59,8 @@
    `(default-italic ((,class (:italic t))))
 
    ;; mode line
-   `(mode-line ((,class (:box (:line-width -1 :color ,weaker)
-                         :foreground ,fg :background ,weakest))))
-   `(mode-line-inactive ((,class (:box (:line-width -1 :color ,weaker)
-                                  :foreground ,weaker :background ,bg))))
+   `(mode-line ((,class (:foreground ,fg :background ,weakest))))
+   `(mode-line-inactive ((,class (:foreground ,weaker :background ,bg))))
 
    ;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,fg))))
