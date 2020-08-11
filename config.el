@@ -28,7 +28,7 @@
 (add-to-list 'custom-theme-load-path "~/.doom.d/")
 (setq doom-theme 'thirdstream)
 (setq doom-font (font-spec :family "Monolisa" :size 12))
-(mac-auto-operator-composition-mode)
+
 
 ;; Turn off title bar
 ;; Or use `defaults write org.gnu.Emacs HideDocumentIcon YES' in the termnial
