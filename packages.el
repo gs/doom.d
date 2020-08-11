@@ -26,7 +26,6 @@
 ;; with the `:disable' property:
 ;(package! builtin-package :disable t)
 (package! hl-line :disable t)
-(package! rainbow-delimiters :disable t)
 
 ;; You can override the recipe of a built in package without having to specify
 ;; all the properties for `:recipe'. These will inherit the rest of its recipe

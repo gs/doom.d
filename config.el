@@ -134,6 +134,8 @@
          (:map (clojure-mode-map clojurescript-mode-map)
           "," #'cider))))
 
+(remove-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+
 (after! cider
   (setq nrepl-hide-special-buffers nil)
   (add-hook 'company-completion-started-hook 'custom/set-company-maps)
