@@ -68,10 +68,9 @@
    `(default-italic ((,class (:italic t))))
 
    ;; mode line
-   `(mode-line ((,class (:box (:line-width 1 :color nil)
-                         ;; :bold t
+   `(mode-line ((,class (:box (:line-width -1 :color ,weaker)
                          :foreground ,fg :background ,weakest))))
-   `(mode-line-inactive ((,class (:box (:line-width 1 :color ,weaker)
+   `(mode-line-inactive ((,class (:box (:line-width -1 :color ,weaker)
                                   :foreground ,weaker :background ,bg))))
 
    ;; font lock
