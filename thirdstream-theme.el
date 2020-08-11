@@ -54,7 +54,7 @@
    `(default ((,class (:background ,bg :foreground ,fg))))
    `(fringe ((,class (:background ,bg :foreground ,fg))))
    `(region ((,class (:foreground ,fg :background ,highlight))))
-   `(show-paren-match ((,class (:background ,highlight :foreground ,fg :bold t))))
+   `(show-paren-match ((,class (:background ,bg :foreground ,success :bold t))))
    `(show-paren-mismatch ((,class (:background ,bg :foreground ,warning :bold t))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,fg))))
    `(isearch ((,class (:bold t :foreground ,warning :background ,weak))))
@@ -88,6 +88,9 @@
    `(cursor ((,class (:background ,fg :foreground ,bg))))
    `(vertical-border ((,class (:foreground ,weaker))))
    `(default-italic ((,class (:italic t))))
+
+   ;; paren
+   `(parenthesis ((,class (:background ,bg :foreground ,weak))))
 
    ;; org
    `(org-code ((,class (:foreground ,fg))))

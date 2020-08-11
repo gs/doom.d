@@ -114,6 +114,8 @@
   :config
   (lispy-set-key-theme '(lispy c-digits)))
 
+(add-hook 'lispy-mode-hook #'paren-face-mode)
+
 (use-package lispyville
   :config
   (lispyville-set-key-theme '((operators normal)
