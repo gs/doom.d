@@ -49,7 +49,7 @@
    `(show-paren-match ((,class (:background ,bg :foreground ,success :bold t))))
    `(show-paren-mismatch ((,class (:background ,bg :foreground ,warning :bold t))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,fg))))
-   `(isearch ((,class (:bold t :foreground ,warning :background ,weak))))
+   `(isearch ((,class (:bold t :foreground ,fg :background ,weak :bold t))))
    `(lazy-highlight ((,class (:foreground ,fg :background ,weaker))))
    `(link ((,class (:underline t))))
    `(parenthesis ((,class (:background ,bg :foreground ,weak))))
