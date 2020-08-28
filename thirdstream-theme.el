@@ -29,21 +29,35 @@
 
 (deftheme thirdstream)
 (let ((class '((class color) (min-colors 89)))
+      ;; Light
       (fg "#111111")
       (bg "#ffffff")
       (weak "#888888")
       (weaker "#dddddd")
       (weakest "#efefef")
       (highlight "#fda50f")
-      (str     "#0271b5")
+      ;; (str     "#0271b5") ; blue
+      (str     "#3c5e2b") ; green
       (success "#00ff00")
-      (warning "#ff0000"))
+      (warning "#ff0000")
+
+      ;; Dark
+      ;; (bg "#000000")
+      ;; (fg "#ffffff")
+      ;; (weak "#aaaaaa")
+      ;; (weaker "#666666")
+      ;; (weakest "#222222")
+      ;; (highlight "#fda50f")
+      ;; (str     "#a7bca4")
+      ;; (success "#00ff00")
+      ;; (warning "#ff0000")
+      )
   (custom-theme-set-faces
    'thirdstream
 
    ;; default
    `(default ((,class (:background ,bg :foreground ,fg))))
-   `(fringe ((,class (:background ,bg :foreground ,fg))))
+   `(fringe ((,class (:background ,bg))))
    `(highlight ((,class (:foreground ,fg :background ,highlight))))
    `(region ((,class (:foreground ,fg :background ,highlight))))
    `(show-paren-match ((,class (:background ,bg :foreground ,success :bold t))))
@@ -59,19 +73,19 @@
    `(default-italic ((,class (:italic t))))
 
    ;; mode line
-   `(mode-line ((,class (:foreground ,fg :background ,weakest))))
-   `(mode-line-inactive ((,class (:foreground ,weaker :background ,bg))))
+   `(mode-line ((,class (:foreground ,fg :background ,weakest :height 0.9))))
+   `(mode-line-inactive ((,class (:foreground ,weaker :background ,bg :height 0.9))))
 
    ;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,fg))))
-   `(font-lock-comment-face ((,class (:foreground ,weak))))
+   `(font-lock-comment-face ((,class (:inherit font-lock-string-face))))
    `(font-lock-negation-char-face ((,class (:foreground ,fg))))
    `(font-lock-reference-face ((,class (:foreground ,fg))))
    `(font-lock-constant-face ((,class (:foreground ,fg))))
    `(font-lock-doc-face ((,class (:inherit font-lock-comment-face))))
    `(font-lock-function-name-face ((,class (:foreground ,fg))))
    `(font-lock-keyword-face ((,class (:foreground ,fg))))
-   `(font-lock-string-face ((,class (:foreground ,str))))
+   `(font-lock-string-face ((,class (:foreground ,weak))))
    `(font-lock-type-face ((,class (:foreground ,fg))))
    `(font-lock-variable-name-face ((,class (:foreground ,fg))))
    `(font-lock-warning-face ((,class (:foreground ,fg :underline (:color ,warning :style wave)))))
