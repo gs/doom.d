@@ -1,4 +1,4 @@
-;;; sketch-white-theme.el --- Theme Sketch
+;;; sketch-black-theme.el --- Theme Sketch
 
 ;; Copyright (C) 2020 Daw-Ran Liou
 
@@ -27,21 +27,20 @@
 
 ;;; Code:
 
-(deftheme sketch-white)
+(deftheme sketch-black)
 (let ((class '((class color) (min-colors 89)))
-      (fg "#111111")
-      (bg "#ffffff")
-      (weak "#888888")
-      (weaker "#dddddd")
-      (weakest "#efefef")
+      (bg "#000000")
+      (fg "#ffffff")
+      (weak "#aaaaaa")
+      (weaker "#666666")
+      (weakest "#222222")
       (highlight "#fda50f")
-      ;; (str     "#0271b5") ; blue
-      (str     "#3c5e2b") ; green
+      (str     "#a7bca4")
       (success "#00ff00")
       (warning "#ff0000")
       )
   (custom-theme-set-faces
-   'sketch-white
+   'sketch-black
 
    ;; default
    `(default ((,class (:background ,bg :foreground ,fg))))
@@ -103,10 +102,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'sketch-white)
+(provide-theme 'sketch-black)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; sketch-white-theme.el ends here
+;;; sketch-black-theme.el ends here

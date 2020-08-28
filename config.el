@@ -26,6 +26,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'sketch-white)
+;; (setq doom-theme 'sketch-black)
 (setq doom-font (font-spec :family "Monolisa" :size 12))
 
 
