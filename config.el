@@ -39,11 +39,7 @@
 
 ;; mode line
 ;;
-(setq doom-modeline-buffer-file-name-style
-      'file-name
-      ;; 'relative-to-project
-      ;; 'truncate-with-project
-      )
+(setq doom-modeline-buffer-file-name-style 'auto)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
