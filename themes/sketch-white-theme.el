@@ -1,4 +1,4 @@
-;;; thirdstream-theme.el --- Theme Thirdstream
+;;; sketch-white-theme.el --- Theme Sketch
 
 ;; Copyright (C) 2020 Daw-Ran Liou
 
@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(deftheme thirdstream)
+(deftheme sketch-white)
 (let ((class '((class color) (min-colors 89)))
       ;; Light
       (fg "#111111")
@@ -53,7 +53,7 @@
       ;; (warning "#ff0000")
       )
   (custom-theme-set-faces
-   'thirdstream
+   'sketch-white
 
    ;; default
    `(default ((,class (:background ,bg :foreground ,fg))))
@@ -115,10 +115,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'thirdstream)
+(provide-theme 'sketch-white)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; thirdstream-theme.el ends here
+;;; sketch-white-theme.el ends here
