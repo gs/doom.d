@@ -211,3 +211,8 @@
    '((default counsel-projectile-switch-project-action-vc))))
 
 (setq git-commit-summary-max-length 68)
+
+(use-package! org-journal
+  :config
+  (setq org-journal-date-prefix "#+TITLE: "
+        org-journal-file-format "%Y-%m-%d.org"))
