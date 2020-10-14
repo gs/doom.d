@@ -214,5 +214,7 @@
 
 (use-package! org-journal
   :config
-  (setq org-journal-date-prefix "#+TITLE: "
-        org-journal-file-format "%Y-%m-%d.org"))
+  (setq
+   org-journal-date-prefix "* "
+   org-journal-file-format "%F.org"
+   org-journal-file-type 'weekly))
