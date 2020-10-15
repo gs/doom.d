@@ -218,3 +218,6 @@
    org-journal-date-prefix "* "
    org-journal-file-format "%F.org"
    org-journal-file-type 'weekly))
+
+(map! :leader
+      :desc "Open Current Journal" "njo" #'org-journal-open-current-journal-file)
