@@ -77,6 +77,7 @@
    `(font-lock-variable-name-face ((,class (:foreground ,fg))))
    `(font-lock-warning-face ((,class (:foreground ,fg :underline (:color ,warning :style wave)))))
    `(hl-fill-column-face ((,class (:background ,weakest))))
+   `(fill-column-indicator ((,class (:foreground ,weakest))))
 
    ;; hl line
    `(hl-line ((,class (:background ,weakest))))
