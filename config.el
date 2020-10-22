@@ -27,7 +27,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'sketch-white)
 ;; (setq doom-theme 'sketch-black)
-(setq doom-font (font-spec :family "Monolisa" :size 12))
+(setq doom-font (font-spec :family "Monolisa" :size 14))
 
 
 ;; Turn off title bar
