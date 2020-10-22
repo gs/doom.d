@@ -165,3 +165,8 @@
 
 (map! :leader
       :desc "Open Current Journal" "njo" #'org-journal-open-current-journal-file)
+
+(use-package! deft
+  :config
+  (setq deft-directory "~/org/"
+        deft-recursive t))
