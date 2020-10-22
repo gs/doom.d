@@ -37,6 +37,8 @@
 (setq ns-use-proxy-icon nil)
 (setq frame-title-format nil)
 
+(add-hook 'window-setup-hook #'toggle-frame-maximized)
+
 ;; mode line
 ;;
 (setq doom-modeline-buffer-file-name-style 'auto)
