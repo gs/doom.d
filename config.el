@@ -172,3 +172,5 @@
   :config
   (setq deft-directory "~/org/"
         deft-recursive t))
+
+(map! :nv ";" #'evil-ex)
